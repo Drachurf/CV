@@ -1,0 +1,124 @@
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color:  #0291ef;;
+}
+.photohr {
+  display: flex;
+  align-items: center;
+}
+
+.hr1 {
+  margin: 0px 20px 25px 50px;
+  height: 100%;
+  color:  #0291ef;
+
+  
+}
+
+nav img {
+  width: 150px;
+  height: 200px;
+  border-radius: 23% 77% 28% 72% / 77% 23% 77% 23%;
+  border: solid 2px white;
+}
+
+.left,
+.right {
+  height: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: solid white 1px;
+}
+
+#image2,
+#image3 {
+  display: none;
+}
+
+.adresse {
+  color: #0291ef;
+  font-size: larger;
+  width: 100%;
+  margin-bottom: 10px;
+}
+span {
+  color: green;
+  font-size: 3em;
+}
+
+body {
+    background: #323641;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    margin-top: -110px;
+    font: 4.5em 'Montserrat';
+    height: 200px;
+
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #eed115;
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+	stroke: #0291ef;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #eed115;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: white;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke:	#4682B4 ;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	20% {stroke-dashoffset: -20%;}
+}
+
+#contactnav{
+    display: flex;
+    align-items: center;
+  }
+
+.fa-regular.fa-envelope{
+    font-size: xx-large;
+}
