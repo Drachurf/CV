@@ -10,7 +10,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color:  #0291ef;;
+  color: #0291ef;
 }
 .photohr {
   display: flex;
@@ -20,9 +20,7 @@ nav a {
 .hr1 {
   margin: 0px 20px 25px 50px;
   height: 100%;
-  color:  #0291ef;
-
-  
+  color: #0291ef;
 }
 
 nav img {
@@ -59,10 +57,15 @@ span {
 }
 
 body {
-    background: #323641;
+  background: #323641;
+}
+main div{
+    color : white;
+    margin-left: 5em;
+    font-size: larger;
 }
 
-
+/* source : https://codepen.io/ClaireLarsen/pen/XmVyVX  */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 .container {
   display: flex;
@@ -71,90 +74,92 @@ body {
 }
 
 svg {
-    margin-top: -110px;
-    font: 4.5em 'Montserrat';
-    height: 200px;
-
+  margin-top: -110px;
+  font: 4.5em "Montserrat";
+  height: 200px;
 }
 
 .text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
 }
 
-.text-copy:nth-child(1){
-	stroke: #eed115;
-	animation-delay: -1s;
+.text-copy:nth-child(1) {
+  stroke: #eed115;
+  animation-delay: -1s;
 }
 
-.text-copy:nth-child(2){
-	stroke: #0291ef;
-	animation-delay: -2s;
+.text-copy:nth-child(2) {
+  stroke: #0291ef;
+  animation-delay: -2s;
 }
 
-.text-copy:nth-child(3){
-	stroke: #eed115;
-	animation-delay: -3s;
+.text-copy:nth-child(3) {
+  stroke: #eed115;
+  animation-delay: -3s;
 }
 
-.text-copy:nth-child(4){
-	stroke: white;
-	animation-delay: -4s;
+.text-copy:nth-child(4) {
+  stroke: white;
+  animation-delay: -4s;
 }
 
-.text-copy:nth-child(5){
-	stroke:	#4682B4 ;
-	animation-delay: -5s;
+.text-copy:nth-child(5) {
+  stroke: #4682b4;
+  animation-delay: -5s;
 }
 
-@keyframes stroke-offset{
-	20% {stroke-dashoffset: -20%;}
-}
-
-#contactnav{
-    display: flex;
-    align-items: center;
+@keyframes stroke-offset {
+  20% {
+    stroke-dashoffset: -20%;
   }
-
-.fa-regular.fa-envelope{
-    font-size: xx-large;
-}
-h2{
-    color: #4682B4;
-    font-size: 5em;
-    text-align: center;
 }
 
-.audiobar{
-    position: fixed;
-    left: 78%;
-    top: 24%;
-    width: 20%;
+#contactnav {
+  display: flex;
+  align-items: center;
 }
 
-h3{
-    color: #eed115;
+.fa-regular.fa-envelope {
+  font-size: xx-large;
+}
+
+h2 {
+  color: #4682b4;
+  font-size: 5em;
+  text-align: center;
+}
+
+.audiobar {
+  position: fixed;
+  left: 78%;
+  top: 24%;
+  width: 20%;
+}
+
+h3 {
+  color: #eed115;
+  font-size: x-large ;
 }
 
 .modal {
-    background-color: white;
-    height: 200px;
-    width: 200px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: 200px;
+  border: solid 5px #4682b4;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 
-  .modal{
-    background-color: white;
-    position : fixed;
-    top :50%;
-    left :50%;
-    transform : translate(-50%, -50%)'
-  }
+.modal img {
+  margin-top: 2px;
+  margin-left: 182px;
+}
