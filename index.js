@@ -27,3 +27,20 @@ document.addEventListener("DOMContentLoaded", function() {
       slider.src = images[currentImageIndex];
     });
   });
+
+  //MODALS
+  const mtc = document.querySelector('.MTC');
+
+  mtc.addEventListener('click', function() {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+  
+    const modalText = document.createElement('p');
+    modalText.textContent = 'modifier texte';
+    modal.appendChild(modalText);
+  
+    document.body.appendChild(modal);
+  
+   
+  });
+// Fonction pour créer une modale
