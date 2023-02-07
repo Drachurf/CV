@@ -30,12 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const closeModal = document.createElement("butonFermer");
-closeModal.innerText = "Fermer";
+const closeModal = document.createElement("img");
+closeModal.className = ("butonFermer")
+closeModal.src = "images_et_logos/hand-scissors-regular.svg";
 closeModal.style.color =  "#0291ef";
 closeModal.style.border =  "#0291ef 1px solid";
+closeModal.style.width =  "30px";
+closeModal.style.height =  "30px";
 closeModal.style.borderRadius =  "30px";
-closeModal.style.padding =  "3px";
+closeModal.style.marginLeft =  "850px";
+closeModal.style.marginBottom = "-20px"
 closeModal.style.background =  "#eed115";
 
 
@@ -112,7 +116,6 @@ tableau.forEach((className, index) => {
     body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie-coffret-collector-integrale-7-ablums-fond-martin-handford-01.jpg')";
     body.style.backgroundSize = "cover";
     body.style.backgroundRepeat = "no-repeat";
-    body.style.backgroundPosition = "center center";
     body.style.width = "100%";
     body.style.height = "100%";
     footer.style.display = "flex";
@@ -128,6 +131,8 @@ tableau.forEach((className, index) => {
     body.style.backgroundImage = "";
     body.style.width = "";
     body.style.height = "";
+    footer.style.color = ""
+    footer.style.display = "";
   });
 
 
