@@ -1,6 +1,16 @@
+/*source de l'image https://geek-collector.fr/divers/livre/ou-est-charlie-lintegrale-coffret-collector.html*/
+body {
+  font-size: 20px;
+  margin : 20px ;
+  background-size: 100% 100%;
+  background-image:url(images_et_logos/Ou-est-charlie-coffret-n:b.jpg)
+  
+}
+
+
 html {
   font-family: "Roboto Condensed", sans-serif;
-  margin: 20px;
+  
 }
 
 nav {
@@ -10,7 +20,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #0291ef;
+  color: #000000;
 }
 .photohr {
   display: flex;
@@ -20,7 +30,7 @@ nav a {
 .hr1 {
   margin: 0px 20px 25px 50px;
   height: 100%;
-  color: #0291ef;
+  color: #ffffff;
 }
 
 nav img {
@@ -53,9 +63,6 @@ nav img {
 }
 
 
-body {
-  background: #323641;
-}
 main div, .sport, .voyages{
     color : white;
     margin-left: 5em;
@@ -164,4 +171,19 @@ h3 {
 .loisirs{
   display: flex;
   justify-content: space-around ;
+}
+
+footer{
+  height: 90px;
+  width: 100%;
+  color: white;
+}
+
+footer p{
+  text-align: center;
+}
+
+
+.btnCharlie{
+
 }

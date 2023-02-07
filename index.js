@@ -97,5 +97,37 @@ tableau.forEach((className, index) => {
   });
 });
 
+// Ou est Charlie ?
+  var footer = document.querySelector("footer"); 
+  var body = document.querySelector("body"); 
+  var main = document.querySelector("main"); 
+  var nav = document.querySelector("nav")
+  const hrs = document.querySelectorAll('hr');
+
+ 
+  
+  document.querySelector(".btnCharlie").addEventListener("click", function(){
+    nav.style.display ="none";
+    main.style.display = "none";
+    body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie-coffret-collector-integrale-7-ablums-fond-martin-handford-01.jpg')";
+    body.style.backgroundSize = "cover";
+    body.style.backgroundRepeat = "no-repeat";
+    body.style.backgroundPosition = "center center";
+    body.style.width = "100%";
+    body.style.height = "100%";
+    footer.style.display = "flex";
+    footer.style.color = "black"
+    hrs.forEach(hr => {
+      hr.style.display = "none";
+    });
+  });
+  
+  document.querySelector(".btnCV").addEventListener("click", function(){
+    main.style.display = "block";
+    nav.style.display ="flex";
+    body.style.backgroundImage = "";
+    body.style.width = "";
+    body.style.height = "";
+  });
 
 
