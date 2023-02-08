@@ -121,7 +121,6 @@ tableau.forEach((className, index) => {
     amotivation.style.display = "none";
     pcharlie.style.display = "none";
     btnCV.style.display = "flex";
-    btnCV.style.height = "22px";
     body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie-coffret-collector-integrale-7-ablums-fond-martin-handford-01.jpg')";
     body.style.backgroundSize = "cover";
     body.style.backgroundRepeat = "no-repeat";

@@ -202,8 +202,13 @@ footer {
   color: #0291ef;
 }
 
-.btnCV .btnCharlie {
-
+.btnCV, .btnCharlie {
+border : solid black 5px;
+border-radius: 25px;
+background-color: white;
+margin: 1%;
+height: 35px;
+align-items: center
 }
 
 article {
