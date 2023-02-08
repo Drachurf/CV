@@ -13,7 +13,7 @@ A partir de la deux possibilités :
 
 Pour toutes personnes n'ayant pas accès à un éditeur de code comme VSCode (logiciel que j'utilise), et souhaitant découvrir mon Cv et ma lettre de motivation "dynamique". 
 Je vous invite a télécharger le logiciel VSCode sur ce lien "https://code.visualstudio.com/download". 
-Une fois installé, ouvrez l'image "VSCode".
+Une fois installé, ouvrez l'image "VSCode" puis l'image "VSCode5".
 Si vous rencontrez des difficultés, dans la préparation de cela, n'hésitez pas à me contacter.
 
 Merci d'avoir pris le temps de lire cela.
