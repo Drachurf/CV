@@ -1,16 +1,19 @@
 /*source de l'image https://geek-collector.fr/divers/livre/ou-est-charlie-lintegrale-coffret-collector.html*/
 body {
   font-size: 20px;
-  margin : 20px ;
+  margin: 20px;
   background-size: 100% 100%;
-  background-image:url(images_et_logos/Ou-est-charlie-coffret-n:b.jpg)
-  
+  background-image: url(images_et_logos/Ou-est-charlie-coffret-n:b.jpg);
 }
 
+.lettreMotivationbody {
+  background: #d5d6cb;
+  margin: 5%;
+}
 
 html {
   font-family: "Roboto Condensed", sans-serif;
-  
+  height: auto;
 }
 
 nav {
@@ -31,6 +34,10 @@ nav a {
   margin: 0px 20px 25px 50px;
   height: 100%;
   color: #ffffff;
+}
+
+.mail{
+text-decoration: none;
 }
 
 nav img {
@@ -54,21 +61,25 @@ nav img {
   display: none;
 }
 
-.adresse {
+.adresse, .mail {
   color: #0291ef;
   font-size: larger;
-  margin-top: -50px;
+
   margin-bottom: 10px;
   font-style: italic;
 }
 
-
-main div, .sport, .voyages{
-    color : white;
-    margin-left: 5em;
-    font-size: larger;
+.adresse1 {
+  margin-top: -50px;
 }
 
+main div,
+.sport,
+.voyages {
+  color: white;
+  margin-left: 5em;
+  font-size: larger;
+}
 /* source : https://codepen.io/ClaireLarsen/pen/XmVyVX  */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 .container {
@@ -76,7 +87,6 @@ main div, .sport, .voyages{
   height: 100%;
   align-items: center;
 }
-
 svg {
   margin-top: -110px;
   font: 4.5em "Montserrat";
@@ -130,12 +140,14 @@ svg {
 }
 
 .fa-regular.fa-envelope {
+
   font-size: xx-large;
+  color : red
 }
 
 h2 {
   color: #4682b4;
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
 }
 
@@ -147,7 +159,7 @@ h2 {
 
 h3 {
   color: #eed115;
-  font-size: x-large ;
+  font-size: x-large;
 }
 
 .modal {
@@ -168,25 +180,47 @@ h3 {
   margin-left: 182px;
 }
 
-.loisirs{
+.loisirs {
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
-footer{
+footer {
   height: 90px;
   width: 100%;
   color: white;
-}
-
-footer p{
+  margin-top: 3%;
   text-align: center;
 }
 
-.OuCharlie{
+.OuCharlie {
   color: red;
 }
 
-.btnCharlie{
+.amotivation {
+  text-decoration: none;
+  color: #0291ef;
+}
 
+.btnCV .btnCharlie {
+
+}
+
+article {
+  text-align: justify;
+  margin: 15px 10%;
+}
+.signature{
+  display: flex;
+  flex-direction: row-reverse
+}
+
+h4 {
+  font-size: x-large;
+  margin-left: 20px;
+}
+
+.lienpageune{
+  text-decoration: none;
+  color :#0291ef;
 }

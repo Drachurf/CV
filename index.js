@@ -107,32 +107,46 @@ tableau.forEach((className, index) => {
   var main = document.querySelector("main"); 
   var nav = document.querySelector("nav")
   const hrs = document.querySelectorAll('hr');
-
+  var amotivation = document.getElementsByClassName("amotivation")[0];
+  var pcharlie = document.getElementsByClassName("pcharlie")[0];
+  var  btnCV = document.getElementsByClassName("btnCV")[0];
  
+  console.log(amotivation);
+
+
   
   document.querySelector(".btnCharlie").addEventListener("click", function(){
     nav.style.display ="none";
     main.style.display = "none";
+    amotivation.style.display = "none";
+    pcharlie.style.display = "none";
+    btnCV.style.display = "flex";
+    btnCV.style.height = "22px";
     body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie-coffret-collector-integrale-7-ablums-fond-martin-handford-01.jpg')";
     body.style.backgroundSize = "cover";
     body.style.backgroundRepeat = "no-repeat";
-    body.style.width = "100%";
+    body.style.width = "98%";
     body.style.height = "100%";
-    footer.style.display = "flex";
-    footer.style.color = "black"
     hrs.forEach(hr => {
       hr.style.display = "none";
+
     });
   });
   
   document.querySelector(".btnCV").addEventListener("click", function(){
     main.style.display = "block";
     nav.style.display ="flex";
+    amotivation.style.display = "block";
+    pcharlie.style.display = "";
     body.style.backgroundImage = "";
     body.style.width = "";
     body.style.height = "";
     footer.style.color = ""
     footer.style.display = "";
+    btnCV.style.display = "none";
+    hrs.forEach(hr => {
+      hr.style.display = "";
+    });
   });
 
 
