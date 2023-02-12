@@ -1,7 +1,7 @@
 /*source de l'image https://geek-collector.fr/divers/livre/ou-est-charlie-lintegrale-coffret-collector.html*/
 body {
   font-size: 20px;
-  margin: 20px;
+  padding: 5%;
   background-size: 100% 100%;
   background-image: url(images_et_logos/Ou-est-charlie-coffret-n:b.jpg);
 }
@@ -54,6 +54,7 @@ nav img {
   color: white;
   border-radius: 25px;
   border: solid white 1px;
+  cursor: pointer;
 }
 
 #image2,
@@ -64,21 +65,24 @@ nav img {
 .adresse, .mail {
   color: #0291ef;
   font-size: larger;
-
   margin-bottom: 10px;
   font-style: italic;
+  text-shadow: black 0.1em 0.1em 0.1em
 }
 
 .adresse1 {
   margin-top: -50px;
 }
-
 main div,
 .sport,
 .voyages {
   color: white;
   margin-left: 5em;
   font-size: larger;
+}
+ main div:hover{
+  color : red;
+  cursor: zoom-in;
 }
 /* source : https://codepen.io/ClaireLarsen/pen/XmVyVX  */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -159,7 +163,7 @@ h2 {
 
 h3 {
   color: #eed115;
-  font-size: x-large;
+  font-size: xX-large;
 }
 
 .modal {
@@ -200,6 +204,7 @@ footer {
 .amotivation {
   text-decoration: none;
   color: #0291ef;
+  font-size: x-large;
 }
 
 .btnCV, .btnCharlie {

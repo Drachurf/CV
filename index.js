@@ -6,19 +6,29 @@ document.addEventListener("DOMContentLoaded", function () {
     "images_et_logos/chabal.jpeg",
   ];
   let currentImageIndex = 0;
-
-  //récupérer les élements
   const slider = document.getElementById("image1");
+
+  function changeImage() {
+    currentImageIndex++;
+    if (currentImageIndex === images.length) {
+      currentImageIndex = 0;
+    }
+    slider.src = images[currentImageIndex];
+  }
+
+  let intervalId = setInterval(changeImage, 2500);
+
+  // arrêter le défilement automatique lorsqu'un bouton est cliqué
   const leftButton = document.querySelector(".left");
   const rightButton = document.querySelector(".right");
-
-  // mise en place du bouton gauche et droite cf grafikart
   leftButton.addEventListener("click", function () {
     currentImageIndex--;
     if (currentImageIndex < 0) {
       currentImageIndex = images.length - 1;
     }
     slider.src = images[currentImageIndex];
+    clearInterval(intervalId);
+    intervalId = setInterval(changeImage, 15000);
   });
 
   rightButton.addEventListener("click", function () {
@@ -27,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
       currentImageIndex = 0;
     }
     slider.src = images[currentImageIndex];
+    clearInterval(intervalId);
+    intervalId = setInterval(changeImage, 15000);
   });
 });
 
@@ -42,10 +54,6 @@ closeModal.style.marginLeft =  "850px";
 closeModal.style.marginBottom = "-20px"
 closeModal.style.background =  "#eed115";
 
-
-
-
-// J'ai reçu de l'aide extérieur pour simplifier mon code, qui à la base répétait chaque élément. Merci A Gaêtan donc !
 
 // créer un tableau
 const tableau = [
@@ -110,10 +118,6 @@ tableau.forEach((className, index) => {
   var amotivation = document.getElementsByClassName("amotivation")[0];
   var pcharlie = document.getElementsByClassName("pcharlie")[0];
   var  btnCV = document.getElementsByClassName("btnCV")[0];
- 
-  console.log(amotivation);
-
-
   
   document.querySelector(".btnCharlie").addEventListener("click", function(){
     nav.style.display ="none";
@@ -121,6 +125,9 @@ tableau.forEach((className, index) => {
     amotivation.style.display = "none";
     pcharlie.style.display = "none";
     btnCV.style.display = "flex";
+    btnCV.style.position = "absolute";
+    btnCV.style.top = "10px";
+    btnCV.style.left = "10px";
     body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie-coffret-collector-integrale-7-ablums-fond-martin-handford-01.jpg')";
     body.style.backgroundSize = "cover";
     body.style.backgroundRepeat = "no-repeat";
@@ -128,7 +135,6 @@ tableau.forEach((className, index) => {
     body.style.height = "100%";
     hrs.forEach(hr => {
       hr.style.display = "none";
-
     });
   });
   
