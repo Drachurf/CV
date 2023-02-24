@@ -1,14 +1,14 @@
 /*source de l'image https://geek-collector.fr/divers/livre/ou-est-charlie-lintegrale-coffret-collector.html*/
 body {
+  margin: 3%;
   font-size: 20px;
-  padding: 5%;
-  background-size: 100% 100%;
-  background-image: url(images_et_logos/Ou-est-charlie-coffret-n:b.jpg);
+  padding: 3%;
+  background-color: #000000e5;
 }
 
 .lettreMotivationbody {
-  background: #d5d6cb;
   margin: 5%;
+  color: white;
 }
 
 html {
@@ -63,11 +63,10 @@ nav img {
 }
 
 .adresse, .mail {
-  color: #0291ef;
+  color: #4682b4;
   font-size: larger;
   margin-bottom: 10px;
   font-style: italic;
-  text-shadow: black 0.1em 0.1em 0.1em
 }
 
 .adresse1 {
@@ -81,7 +80,7 @@ main div,
   font-size: larger;
 }
  main div:hover{
-  color : red;
+  color : #4682b4;
   cursor: zoom-in;
 }
 /* source : https://codepen.io/ClaireLarsen/pen/XmVyVX  */
@@ -146,7 +145,7 @@ svg {
 .fa-regular.fa-envelope {
 
   font-size: xx-large;
-  color : red
+  color : #4682b4;
 }
 
 h2 {
@@ -198,7 +197,7 @@ footer {
 }
 
 .OuCharlie {
-  color: red;
+  color: rgba(255, 0, 0, 0.72);
 }
 
 .amotivation {

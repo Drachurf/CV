@@ -1,9 +1,9 @@
 // slide image profil
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
-    "images_et_logos/1erdeclass.JPG",
-    "images_et_logos/aide.jpeg",
-    "images_et_logos/chabal.jpeg",
+    "images_et_logos/1erdeclass.webp",
+    "images_et_logos/aide.webp",
+    "images_et_logos/chabal.webp",
   ];
   let currentImageIndex = 0;
   const slider = document.getElementById("image1");
@@ -54,7 +54,6 @@ closeModal.style.marginLeft =  "850px";
 closeModal.style.marginBottom = "-20px"
 closeModal.style.background =  "#eed115";
 
-
 // créer un tableau
 const tableau = [
   "APF",
@@ -77,7 +76,7 @@ const paragraphes = [
   "Durant 4 années, j'ai été auto-entrepreneur, dans l'accompagnement au bien-être pour les clients venant me voir. Après avoir aidé des individus dans le cadre social de mon métier d'éducateur spécialisé, j'ai souhaité accompagner des personnes différemment dans une approche holistique. Projet qui m'a beaucoup plu durant ces 4 années avec une autonomie importante du fait que j'étais mon propre patron.",
 ];
 
-//Appler toutes les class et lancer une function click
+//Appeler toutes les class et lancer une function click
 tableau.forEach((className, index) => {
   const element = document.querySelector(`.${className}`);
 
@@ -128,7 +127,7 @@ tableau.forEach((className, index) => {
     btnCV.style.position = "absolute";
     btnCV.style.top = "10px";
     btnCV.style.left = "10px";
-    body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie-coffret-collector-integrale-7-ablums-fond-martin-handford-01.jpg')";
+    body.style.backgroundImage = "url('images_et_logos/Ou-est-charlie.webp')";
     body.style.backgroundSize = "cover";
     body.style.backgroundRepeat = "no-repeat";
     body.style.width = "98%";
@@ -136,6 +135,7 @@ tableau.forEach((className, index) => {
     hrs.forEach(hr => {
       hr.style.display = "none";
     });
+    alert("'Où est Charlie', un jeu de recherche, dont l'objectif est de trouver Charlie - Si vous ne savez pas à quoi ressemble Charlie, je vous conseille une petite recherche dans google");
   });
   
   document.querySelector(".btnCV").addEventListener("click", function(){
@@ -153,5 +153,3 @@ tableau.forEach((className, index) => {
       hr.style.display = "";
     });
   });
-
-
