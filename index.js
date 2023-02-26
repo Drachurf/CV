@@ -92,7 +92,7 @@
       modalText.textContent = element.textContent;
       modal.appendChild(modalText);
       const modalParagraphe = document.createElement("p");
-      modalParagraphe.innerText = paragraphes[index];
+      modalParagraphe.textContent = paragraphes[index];
       modalParagraphe.style.textAlign = 'justify';
       modal.appendChild(modalParagraphe);
       backModal.appendChild(modal);
@@ -103,7 +103,7 @@
       });
   
       //fermer la modale en cliquant à l'extérieur
-      window.addEventListener("click", function (event) {
+      document.addEventListener("click", function (event) {
         if (event.target === backModal) { 
           backModal.remove();
         }
