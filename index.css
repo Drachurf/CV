@@ -1,9 +1,10 @@
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   margin: 4%;
   font-size: 20px;
   padding: 3%;
-  background-color: #000000e5;
+  background: black;
 }
 a{
   text-decoration: none;
