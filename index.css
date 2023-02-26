@@ -168,6 +168,13 @@ align-items: center
 main div{
   margin-left: 0%;
 }
+.adresse{
+  text-align: center;
+}
+h2{
+font-size: smaller;
+text-align: end;
+}
 .g-ants{
   display: flex;
 }
@@ -178,6 +185,7 @@ main div{
 .reponsive{
   visibility: inherit;
   color: #eed115;
+  font-size:3em ;
 }
 h2{
   font-size: 3em;
