@@ -77,12 +77,14 @@
   ];
 
   //Appeler toutes les class et lancer une function click
-
   tableau.forEach((className, index) => {
     const element = document.querySelector(`.${className}`);
-    
+  
     element.addEventListener("click", function () {
       //créer les éléments dans chaque div
+      const backModal = document.createElement("div");
+      backModal.classList.add("backmodal");
+      document.body.appendChild(backModal);
       const modal = document.createElement("div");
       modal.classList.add("modal");
       modal.appendChild(closeModal);
@@ -91,24 +93,30 @@
       modal.appendChild(modalText);
       const modalParagraphe = document.createElement("p");
       modalParagraphe.innerText = paragraphes[index];
-      modalParagraphe.style.textAlign =  'justify';
+      modalParagraphe.style.textAlign = 'justify';
       modal.appendChild(modalParagraphe);
-      document.body.appendChild(modal);
-
-      //fermer les modales 
+      backModal.appendChild(modal);
+  
+      //fermer les modales
       closeModal.addEventListener("click", function () {
-        modal.remove();
+        backModal.remove();
       });
+  
+      //fermer la modale en cliquant à l'extérieur
+      window.addEventListener("click", function (event) {
+        if (event.target === backModal) { 
+          backModal.remove();
+        }
+      });
+  
       // fermer les modales avec Echapes
       document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") {
-          modal.remove();
+          backModal.remove();
         }
       });
     });
   });
-
-
   // Ou est Charlie ?
     var footer = document.querySelector("footer"); 
     var body = document.querySelector("body"); 
