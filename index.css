@@ -1,76 +1,54 @@
-/*source de l'image https://geek-collector.fr/divers/livre/ou-est-charlie-lintegrale-coffret-collector.html*/
 body {
-  margin: 3%;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 4%;
   font-size: 20px;
   padding: 3%;
   background-color: #000000e5;
 }
-
+a{
+  text-decoration: none;
+}
 .lettreMotivationbody {
   margin: 5%;
   color: white;
 }
-
-html {
-  font-family: "Roboto Condensed", sans-serif;
-  height: auto;
-}
-
 nav {
   display: flex;
-  justify-content: space-between;
 }
-
-nav a {
-  text-decoration: none;
-  color: #000000;
+.reponsive{
+  visibility: hidden;
 }
 .photohr {
   display: flex;
   align-items: center;
 }
-
 .hr1 {
   margin: 0px 20px 25px 50px;
   height: 100%;
   color: #ffffff;
 }
-
-.mail{
-text-decoration: none;
-}
-
 nav img {
   width: 150px;
   height: 200px;
   border-radius: 23% 77% 28% 72% / 77% 23% 77% 23%;
   border: solid 2px white;
 }
-
 .left,
 .right {
   height: 20px;
-  background-color: black;
-  color: white;
+  color: black;
   border-radius: 25px;
   border: solid white 1px;
   cursor: pointer;
 }
-
 #image2,
 #image3 {
   display: none;
 }
-
-.adresse, .mail {
+.adresse, .adresse a {
   color: #4682b4;
   font-size: larger;
-  margin-bottom: 10px;
   font-style: italic;
-}
-
-.adresse1 {
-  margin-top: -50px;
 }
 main div,
 .sport,
@@ -91,11 +69,12 @@ main div,
   align-items: center;
 }
 svg {
-  margin-top: -110px;
-  font: 4.5em "Montserrat";
-  height: 200px;
-}
-
+position: absolute;
+left: 30%;
+top: 0%;
+font: 4.5em "Montserrat";
+height: 200px;
+} 
 .text-copy {
   fill: none;
   stroke: white;
@@ -104,12 +83,10 @@ svg {
   stroke-dashoffset: 0%;
   animation: stroke-offset 5.5s infinite linear;
 }
-
 .text-copy:nth-child(1) {
   stroke: #eed115;
   animation-delay: -1s;
 }
-
 .text-copy:nth-child(2) {
   stroke: #0291ef;
   animation-delay: -2s;
@@ -119,52 +96,38 @@ svg {
   stroke: #eed115;
   animation-delay: -3s;
 }
-
 .text-copy:nth-child(4) {
   stroke: white;
   animation-delay: -4s;
 }
-
 .text-copy:nth-child(5) {
   stroke: #4682b4;
   animation-delay: -5s;
 }
-
 @keyframes stroke-offset {
   20% {
     stroke-dashoffset: -20%;
   }
 }
-
 #contactnav {
   position: relative;
   left: 160px;
   top: 35px;
 }
-
-.fa-regular.fa-envelope {
-
-  font-size: xx-large;
-  color : #4682b4;
-}
-
 h2 {
   color: #4682b4;
   font-size: 4em;
   text-align: center;
 }
-
 .audiobar {
   position: relative;
-  left: 6px;
-  top: 151px;
+  left: 10%;
+  top: 133px;
 }
-
 h3 {
   color: #eed115;
   font-size: xX-large;
 }
-
 .modal {
   background-color: white;
   position: fixed;
@@ -177,35 +140,21 @@ h3 {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-
-.modal img {
-  margin-top: 2px;
-  margin-left: 182px;
-}
-
 .loisirs {
   display: flex;
   justify-content: space-around;
 }
-
 footer {
-  height: 90px;
-  width: 100%;
   color: white;
-  margin-top: 3%;
   text-align: center;
 }
-
 .OuCharlie {
   color: rgba(255, 0, 0, 0.72);
 }
-
 .amotivation {
-  text-decoration: none;
   color: #0291ef;
   font-size: x-large;
 }
-
 .btnCV, .btnCharlie {
 border : solid black 5px;
 border-radius: 25px;
@@ -214,22 +163,62 @@ margin: 1%;
 height: 35px;
 align-items: center
 }
-
-article {
-  text-align: justify;
-  margin: 15px 10%;
+/* responsive tablette*/
+@media screen and (max-width: 992px){
+main div{
+  margin-left: 0%;
 }
-.signature{
+.g-ants{
   display: flex;
-  flex-direction: row-reverse
 }
-
-h4 {
-  font-size: x-large;
-  margin-left: 20px;
+.modal{
+  width: 80%;
+  top:45%
 }
-
-.lienpageune{
-  text-decoration: none;
-  color :#0291ef;
+.reponsive{
+  visibility: inherit;
+  color: #eed115;
+}
+h2{
+  font-size: 3em;
+}
+.audiobar{
+  visibility: hidden;
+}
+h1 svg {
+  display: none;
+}
+.sport, .voyages{
+  margin-left: 1em;
+}
+.adresse, .mail{
+  font-size: large ;
+}
+.pcharlie{
+  display: none;
+}
+}
+@media screen and (max-width: 767px){
+  .photohr, hr{
+    display: none;
+  }
+  h1{
+    font-size: xx-large;
+    text-align: center;
+  }
+  h2{
+font-size: 2em;
+  }
+  .modal{
+    width: 80%;
+    height: auto;
+    top:50%;
+    font-size:smaller;
+  }
+  .modal h3{
+    font-size:medium ;
+  }
+  .loisirs {
+    display: block;
+  }
 }
