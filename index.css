@@ -4,14 +4,14 @@ body {
   margin: 4%;
   font-size: 20px;
   padding: 3%;
-  background: black;
+  background: #4682b4;
 }
 a{
   text-decoration: none;
 }
 .lettreMotivationbody {
   margin: 5%;
-  color: white;
+  color:white;
 }
 nav {
   display: flex;
@@ -32,22 +32,23 @@ nav img {
   width: 150px;
   height: 200px;
   border-radius: 23% 77% 28% 72% / 77% 23% 77% 23%;
-  border: solid 2px white;
+  border: solid 8px black;
 }
 .left,
 .right {
   height: 20px;
-  color: black;
+  color: #eed115;
   border-radius: 25px;
-  border: solid white 1px;
+  border: solid black 1px;
   cursor: pointer;
+  background-color: black;
 }
 #image2,
 #image3 {
   display: none;
 }
 .adresse, .adresse a {
-  color: #4682b4;
+  color: white;
   font-size: larger;
   font-style: italic;
 }
@@ -59,7 +60,7 @@ main div,
   font-size: larger;
 }
  main div:hover{
-  color : #4682b4;
+  color : black;
   cursor: zoom-in;
 }
 /* source : https://codepen.io/ClaireLarsen/pen/XmVyVX  */
@@ -116,7 +117,7 @@ height: 200px;
   top: 35px;
 }
 h2 {
-  color: #4682b4;
+  color: black;
   font-size: 4em;
   text-align: center;
 }
@@ -159,10 +160,10 @@ footer {
   text-align: center;
 }
 .OuCharlie {
-  color: rgba(255, 0, 0, 0.72);
+  color: #af0303;
 }
 .amotivation {
-  color: #0291ef;
+  color: black;
   font-size: x-large;
 }
 .btnCV, .btnCharlie {
@@ -172,6 +173,12 @@ background-color: white;
 margin: 1%;
 height: 35px;
 align-items: center
+}
+.lienpageune{
+  color: black;
+}
+p{
+  text-align: justify;
 }
 /* responsive tablette puis phone*/
 @media screen and (max-width: 992px){
